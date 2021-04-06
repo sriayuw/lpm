@@ -27,9 +27,6 @@
         if($_SESSION['level'] == "" ){
             header("location:auth/login-petugas.php");
         }
-        if (condition) {
-            # code...
-        }
  ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
