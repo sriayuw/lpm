@@ -1,9 +1,13 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$name = "lpm";
+// $host = "localhost";
+// $user = "root";
+// $pass = "";
+// $name = "lpm";
+$host = "sql110.epizy.com";
+$user = "epiz_28324066";
+$pass = "tL8CrKvjhH02xI";
+$name = "epiz_28324066_laporanpengaduanmasyarakat";
 
 $conn = mysqli_connect($host, $user, $pass, $name) or die("Koneksi ke database gagal");
 mysqli_select_db($conn, $name) or die('Database is not found!');
