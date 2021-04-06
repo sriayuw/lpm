@@ -16,7 +16,7 @@
 		} else {
 		    echo "Upload Gagal!";
 		}	
-		$sql = "INSERT INTO laporan_pengaduan VALUES(NULL ,'$tgl_pengaduan', '$nik', '$judul_laporan', '$isi_laporan','$namaFile', '$status' )";
+		$sql = "INSERT INTO laporan_pengaduan VALUES(NOT NULL ,'$tgl_pengaduan', '$nik', '$judul_laporan', '$isi_laporan','$namaFile', '$status' )";
 
 		if (mysqli_query($conn, $sql)) {
 			echo "<script>alert('Transaksi Sukses.Data Sudah ada dalam Laporan');window.location='index.php'</script>";
